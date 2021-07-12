@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
+        <title>Dutch Malaccan Families</title>
+    </head>
+
+    <body>
+
+        <style>
+            /* Header */
+            .nav-item .nav-link {
+            padding: .10rem 0;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: transparent;
+            border-bottom: .25rem solid transparent;
+            }
+
+            .nav-item .nav-link:hover,
+            .nav-item .nav-link:focus {
+            border-bottom-color: rgba(255, 255, 255, 0.349);
+            }
+
+            .nav-item .nav-link + .nav-link {
+            margin-left: 1rem;
+            }
+
+            .nav-item .active {
+            color: #fff;
+            border-bottom-color: #fff;
+            }
+
+            .navbar-brand {
+                font-weight: 700;
+            }
+
+
+            /* Cover */
+            .container-fluid {
+                text-align: center;
+                background-image: url(./assets/images/bg.png);
+                background-size: cover;
+                min-height: 100vh;
+            }
+
+
+            /* Carousel */
+            .carousel-item {
+                height: 32rem;
+                background: #777;
+                color: white;
+                position: relative;
+            }
+
+            .container {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding-bottom: 50px;
+            }
+
+            .overlay-image {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5;
+                
+            }
+
+            .carousel-control {
+                height: 26%;
+                top: 33%;
+                width: 86px;
+            }
+
+            /* Footer */
+            footer {
+                text-align: center;
+                background: rgba(52 , 58 , 64);
+                color: white;
+            }
+            
+            .copy {
+                font-size: 12px;
+                /* margin-bottom : 10px; */
+                /* border-top: 1px solid #FFFFFF; */
+            }
+
+            ul.social-network {
+                list-style: none;
+                display: inline;
+                margin-left: 0 !important;
+                padding: 0;
+            }
+
+            ul.social-network li {
+                display: inline;
+                margin: 5px;
+            }
+
+            /* Footer social icons */
+
+            .social-network a.icoFacebook:hover {
+                background-color: #3B5998;
+            }
+
+            .social-network a.icoInstagram:hover {
+                background-color: pink;
+            }
+
+            .social-network a.icoWebpage:hover {
+                background-color: rgb(255, 190, 86);
+            }
+
+            .social-network a.icoFacebook:hover i,
+            .social-network a.icoInstagram:hover i,
+            .social-network a.icoInstagram:hover i {
+                color: #fff;
+            }
+
+            .social-network a.socialIcon:hover,
+            .socialHoverClass {
+                color: #44BCDD;
+            }
+
+            .social-circle li a {
+                display: inline-block;
+                position: relative;
+                margin: 0 auto 0 auto;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                font-size: 15px;
+            }
+
+            .social-circle li i {
+                margin: 0;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            .social-circle li a:hover i,
+            .triggeredHover {
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -ms--transform: rotate(360deg);
+                transform: rotate(360deg);
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+
+            .social-circle i {
+                color: #595959;
+                -webkit-transition: all 0.8s;
+                -moz-transition: all 0.8s;
+                -o-transition: all 0.8s;
+                -ms-transition: all 0.8s;
+                transition: all 0.8s;
+            }
+
+            .social-network a {
+                background-color: #F9F9F9;
+            }
+
+
+        </style>
+
+        <!-- The header -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
+            <a class="navbar-brand col" href="#" style="color:white; font-size : 25px; ">The Bendahari</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse col justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#" style="color:white;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white;">Gaming</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white;">Family Stories</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Paragraph -->
+        <div class="container-fluid d-flex w-100 h-100 p-5 mx-auto flex-column justify-content-center">
+            <br>
+            <br>
+            <h1 class = "display-4 text-dark" style="font-family: 'Libre Baskerville', sans-serif;">DUTCH MALACCAN FAMILIES</h1>
+            <hr>
+            <p class="lead text-dark">Curating Together The <b>Stories Of Families</b>,<br> Who Are Piecing Together Their <b>Dutch Ancestry</b> Today, 
+                <br>And Giving Them The <b>Recognition They Deserve</b>.<br>
+                Because <br>
+                <b><b><big>Dutch Malaccan History is Malaysian History.</big></b></b>
+            </p>
+        </div>
+
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <!-- Carousel Arrow Controls -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Carousel Content -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay-image" style="background-image: url(https://media.thestar.com.my/Prod/46D10BC3-135C-4672-BBDC-AB379794C5F2);"></div>
+
+                    <div class="container" >
+                        <h1 style = "text-shadow: 0 2px 3px #747474, 
+                        1px 3px 4px #222, 
+                        0 8px 3px #474747, 
+                        0 11px 4px #747474,
+                        0 14px 4px #565656,
+                        0 17px 4px #343434,
+                        0 20px 4px #171717;">
+                            Goonting Family
+                        </h1>
+                        <br>
+                        <p>
+                            Possible descendants of a pastor in the Dutch East India Company (VOC).
+                        </p>
+                        <a href="goonting-carousel.html" class="btn btn-info" style="position: relative;">Learn more!</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url(../bootstrap-5.0.2-examples/assets/images/WhatsApp\ Image\ 2021-07-08\ at\ 16.23.16.jpeg); background-repeat: no-repeat; background-size: cover;">
+                    <div class="overlay-image" style="background-image: url();"></div>
+
+                    <div class="container">
+                        <h1 style= "text-shadow:0 2px 3px #747474, 
+                        1px 3px 4px #222, 
+                        0 8px 3px #474747, 
+                        0 11px 4px #747474,
+                        0 14px 4px #565656,
+                        0 17px 4px #343434,
+                        0 20px 4px #171717;">
+                            Fredericks Family
+                        </h1>
+                        <br>
+                        <p>
+                            A quest for heritage identification spawned from curiosity.
+                        </p>
+                        <a href="#" class="btn btn-info" style="position: relative;">Learn More!</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url(../bootstrap-5.0.2-examples/assets/images/WhatsApp\ Image\ 2021-07-08\ at\ 16.25.52.jpeg); background-repeat: no-repeat; background-size: cover;">
+                    <div class="overlay-image" style="background-image: url();"></div>
+
+                    <div class="container">
+                        <h1 style= "text-shadow:0 2px 3px #747474, 
+                        1px 3px 4px #222, 
+                        0 8px 3px #474747, 
+                        0 11px 4px #747474,
+                        0 14px 4px #565656,
+                        0 17px 4px #343434,
+                        0 20px 4px #171717;">
+                            Skelchy Family
+                        </h1>
+                        <br>
+                        <p>
+                            Having roots that trace back to 18th century Macau.
+                        </p>
+                        <button href="#" class="btn btn-info" style="position: relative;">Learn More!</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url(../bootstrap-5.0.2-examples/assets/images/WhatsApp\ Image\ 2021-07-08\ at\ 16.26.10.jpeg); background-repeat: no-repeat; background-size: cover;">
+                    <div class="overlay-image" style="background-image: url();"></div>
+
+                    <div class="container">
+                        <h1 style= "text-shadow:0 2px 3px #747474, 
+                        1px 3px 4px #222, 
+                        0 8px 3px #474747, 
+                        0 11px 4px #747474,
+                        0 14px 4px #565656,
+                        0 17px 4px #343434,
+                        0 20px 4px #171717;">
+                            Westerhout Family
+                        </h1>
+                        <br>
+                        <p>
+                            With 15 traceable generations, this family has a rich legacy that is rooted deep in history.
+                        </p>
+                        <a href="#" class="btn btn-info" style="position: relative;">Learn More!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <a href="#myCarousel" class="carousel-control carousel-control-prev" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+  
+            <a href="#myCarousel" class="carousel-control carousel-control-next" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+              
+        </div>
+
+        <!-- Footer -->
+        <footer class="mainfooter" role="contentinfo">
+            <div class="footer-middle">
+                <div class="footer-pad" >
+                    <br>
+                    <h4><b>Follow Us</b></h4>
+                    <ul class="social-network social-circle">
+                    <br>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.thebendahari.com/" class="icoWebpage" title="Webpage"><i class="fa fa-globe"></i></a></li>
+
+                    </ul>	
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-12 copy">
+                    <br>
+                    <p class="text-center">&copy; Copyright 2021 - The Bendahari.  All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+  </body>
+</html>
