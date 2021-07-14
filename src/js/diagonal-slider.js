@@ -7,7 +7,6 @@ function init() {
     let current = 0;
   
     items.forEach((item) => {
-        
         const textWrapper = item.querySelector(".wrap");
         textWrapper.innerHTML = textWrapper.textContent.replace(
             /\S/g,
