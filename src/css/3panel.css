@@ -79,7 +79,7 @@ body {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 60%;
+    top: 55%;
     opacity: 0;
 }
 
@@ -93,7 +93,7 @@ body {
 
 .tl-title {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
