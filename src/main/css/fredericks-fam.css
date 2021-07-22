@@ -149,7 +149,7 @@ svg {
 
 .slide:nth-child(1) .slide__bg {
     left : 376px;
-    background-image: url("/src/resources/images/Ceceilia-Low-Khen-Chia-cropped.jpeg");
+    background-image: url("/src/main/resources/images/fredericks-family/Ceceilia-Low-Khen-Chia-cropped.jpeg");
 }
 
 .slide:nth-child(1) .slide__overlay-path {
