@@ -221,8 +221,7 @@
 
 /* Image Overlay */
 .overlay {
-    position: absolute;
-    color: #f1f1f1;
+    position: relative;
     width: 100%;
     transition: .5s ease;
     opacity:0;
@@ -277,11 +276,12 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 
 .image-gallery a i {
     color: rgba(255, 255, 255, .6);
-    font-size: 3rem;
     position: relative;
     z-index: 100;
     padding: 1rem 3rem;
@@ -303,10 +303,9 @@ body {
     transition: opacity .5s;
 }
 
-.image-gallery a:hover i,
-.image-gallery a:hover::before {
-    opacity: 0.4;
-    background-color: #000000;
+.image-gallery a:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
 }
 
 .image-gallery a:hover .overlay {
