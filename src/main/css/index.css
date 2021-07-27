@@ -29,7 +29,7 @@
 /* Cover */
 .container-fluid {
     text-align: center;
-    background-image: url(../resources/images/bg-v2.png);
+    background-image: url(../resources/images/bg-v3.jpeg);
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
@@ -44,12 +44,13 @@
     }
     
     .typing-demo {
-    width: 40ch;
-    animation: typing 2.6s steps(40), blink .5s step-end infinite alternate;
+    width: 39ch;
+    animation: typing 2.6s steps(39), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-size: 2em;
+    font-family: 'Avenir LT Std', sans-serif;
     }
     
     @keyframes typing {

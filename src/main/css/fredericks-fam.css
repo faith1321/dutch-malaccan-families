@@ -24,6 +24,17 @@ svg {
     overflow: visible;
 }
 
+.familytree{
+    position: absolute;
+    margin-left: 430px; 
+    margin-top : 580px;
+    overflow: visible;
+    transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+    will-change: transform, opacity;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
 .slider-container {
     position: relative;
     height: 100%;
@@ -128,7 +139,8 @@ svg {
 }
 
 .slide.active .slide__overlay,
-.slide.active .slide__text {
+.slide.active .slide__text, 
+.slide.active .familytree {
     opacity: 1;
     transform: translateX(0);
 }
@@ -153,7 +165,7 @@ svg {
 }
 
 .slide:nth-child(1) .slide__overlay-path {
-    fill: #d4a55d;
+    fill: url(../resources/images/bg-v3.jpeg);
 }
 
 @media (max-width: 991px) {
@@ -237,6 +249,7 @@ svg {
     transform: translate3d(-20%, 0, 0);
     opacity: 0;
 }
+
 @media (max-width: 991px) {
     .slide__overlay {
         display: none;
