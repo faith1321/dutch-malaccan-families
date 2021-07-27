@@ -276,8 +276,6 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
 }
 
 .image-gallery a i {
@@ -303,9 +301,10 @@ body {
     transition: opacity .5s;
 }
 
-.image-gallery a:hover {
-    -webkit-filter: grayscale(0);
-    filter: none;
+.image-gallery a:hover i,
+.image-gallery a:hover::before {
+    opacity: 0.4;
+    background-color: #000000;
 }
 
 .image-gallery a:hover .overlay {
