@@ -29,7 +29,7 @@
 /* Cover */
 .container-fluid {
     text-align: center;
-    background-image: url(../resources/images/bg-v3.jpeg);
+    background-image: url(../resources/images/bg-v2.jpeg);
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
@@ -230,6 +230,8 @@
     font-size: 20px;
     padding: 20px;
     text-align: center;
+    font-weight : bold;
+    font-family: "Raleway", sans-serif;
 }
 
 
@@ -305,12 +307,13 @@ body {
 }
 
 .image-gallery a:hover {
-    -webkit-filter: grayscale(0);
-    filter: none;
+    -webkit-filter: grayscale(0.4);
+    filter :black;
 }
 
 .image-gallery a:hover .overlay {
     opacity: 1;
+    font-weight: bold;
 }
 
 .img1 {
@@ -324,10 +327,10 @@ body {
     transform: scale(1, 1);
     transition: transform 0.4s;
     background-image: url("../resources/images/fredericks-family/Timothy-Fredericks-&-Family.jpg");
-
+    
 }
 .img1:hover {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);    
 }
 
 .img2 {
@@ -357,7 +360,7 @@ body {
     transform: scale(1, 1);
     transition: transform 0.4s;
     background-image: url("../resources/images/klass-family/James-Sebastian-Klass-&-Sisters.jpg");
-
+   
 }
 .img3:hover {
     transform: scale(1.05, 1.05);
