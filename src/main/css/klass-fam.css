@@ -15,6 +15,10 @@ html, body {
     overflow: hidden;
 }
 
+.popup-title{
+    color : red;
+}
+
 body {
     background: #E4C799;
 }

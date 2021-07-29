@@ -48,7 +48,7 @@ img {
     visibility: visible;
 }
 
-.marker {
+.markerpop1 {
     position: absolute;
     z-index: 1;
     display: inline-block;
@@ -59,17 +59,37 @@ img {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: red;
     transition: all 300ms;
 }
-
+.markerpop2{
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #FFFF00;
+    transition: all 300ms;
+}
 .marker1 {
     top: 30%;
     left: 20%;
+    font-size : 28px;
 }
 .marker2 {
-    top: 50%;
-    left: 64%;
+    top: 30%;
+    left: 20%;
+    font-size: 28px;
+}
+
+.camera{
+    margin-left : 0.2px;
+    margin-top : 3.3px;
 }
 
 @media only screen and (min-width: 48em) {
@@ -85,7 +105,12 @@ img {
 
     .map-item1 {
         top: 10%;
-        left: 50%;
+        left: 35%;
+    }
+
+    .map-item2 {
+        top: 33%;
+        left: 63%;
     }
 
     .map-popup {
