@@ -113,6 +113,21 @@ img {
         left: 63%;
     }
 
+    .map-item3 {
+        top: 10%;
+        left: 40%;
+    }
+
+    .map-item4 {
+        top: 6%;
+        left: 74%;
+    }
+
+    .map-item5 {
+        top: 60%;
+        left: 63%;
+    }
+
     .map-popup {
         position: absolute;
         left: 58px;

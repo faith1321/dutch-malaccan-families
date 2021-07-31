@@ -205,11 +205,16 @@ svg {
 
 .slide:nth-child(3) .slide__bg {
     left: -100%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg");
+    box-shadow: 10px 10px red;
+    background-image: url("../resources/images/klass-family/James-Sebastian-Klass.jpeg"), url("../resources/images/klass-family/James-Sebastian-Klass-&-Sisters.jpg"), url("../resources/images/klass-family/James-Sebastian-Klass-&-family.jpg");
+    background-repeat: no-repeat;
+    background-size  : 25% 40%;
+    margin-right :600px;
+    background-position: 59% 7.9%, 98% 8%, 89% 90%;
 }
 
 .slide:nth-child(3) .slide__overlay-path {
-    fill: #adc5cd;
+    fill: #dbb396;
 }
 
 @media (max-width: 991px) {
@@ -224,7 +229,8 @@ svg {
 
 .slide:nth-child(4) .slide__bg {
     left: -150%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");
+    background-image: url("");
+
 }
 
 .slide:nth-child(4) .slide__overlay-path {
