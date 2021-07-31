@@ -475,9 +475,8 @@ body {
 .page-content {
     display: grid;
     grid-gap: 1rem;
-    padding: 1rem;
-    max-width: 1024px;
-    margin: 0 auto;
+    padding: 0rem;
+    margin: 0;
     font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
@@ -488,7 +487,7 @@ body {
 
 @media (min-width: 800px) {
     .page-content {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(7, 1fr);
     }
 }
 
@@ -536,16 +535,27 @@ body {
     transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url("../resources/images/fredericks-family/Timothy-Fredericks-&-Family.jpg");
+    background-position: -70px -35px;
 }
 .card:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url("../resources/images/stock-family-photo.jpeg");
 }
 .card:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url("../resources/images/klass-family/James-Sebastian-Klass-&-family.jpg");
+    background-position: -10rem -20px;
 }
 .card:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url("../resources/images/bluder-cake-3.JPG");
+}
+.card:nth-child(5):before {
+    background-image: url("../resources/images/westerhout-family/Westerhout-Family-House-Melaka.png");
+}
+.card:nth-child(6):before {
+    background-image: url("../resources/images/Maps/Plan\ 1750\ \(1764\)\ Nicolas\ Bellin\ 2.JPEG");
+}
+.card:nth-child(7):before {
+    background-image: url("../resources/images/Maps/Plan\ 1792\ Carl\ Friedrich\ Reimer\ 1.jpg");
 }
 
 .content {
