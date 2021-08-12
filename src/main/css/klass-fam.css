@@ -81,7 +81,7 @@ svg {
 
 .slider-pagi {
     position: absolute;
-    z-index: 3;
+    z-index: 8;
     left: 50%;
     bottom: 2rem;
     transform: translateX(-50%);
